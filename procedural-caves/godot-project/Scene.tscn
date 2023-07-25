@@ -7,6 +7,7 @@
 [node name="Scene" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
+position = Vector2( -9, 6 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1920, 1080 )
