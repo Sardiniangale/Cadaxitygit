@@ -7,7 +7,6 @@
 [node name="Scene" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( -9, 6 )
 texture = ExtResource( 2 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1920, 1080 )
@@ -19,9 +18,15 @@ cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
 format = 1
 
 [node name="Cavedenerator" parent="TileMap" instance=ExtResource( 3 )]
+noise_oct = 2
+noise_per = 6
+noise_l = 0.0
+noise_thresh = 0.0
+redraw = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 2, 2 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Camera2D"]
 remote_path = NodePath("../../Background")
