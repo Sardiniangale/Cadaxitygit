@@ -37,11 +37,6 @@ remote_path = NodePath("../../Background")
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 script = ExtResource( 4 )
-speed = null
-jump_strength = null
-maximum_jumps = null
-double_jump_strength = null
-gravity = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 64, 96 )
